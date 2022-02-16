@@ -1,0 +1,6 @@
+package com.infinitystock.statussaver.activity;
+
+public class AppConfig
+{
+    public static final String LICENSE_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuC86uUBYHc71mXo9JNsi7iHeqT6t3H6mje0sQiJMS0gzc4aOk9iKniettThdQ+v3et6hsKw9I3hVFlXmOEXu1EtBN/f5ePysPNs6zFDrqEjMIunrja84vi5cK6tcplwSEuJKEqmJLczn1YOfm1psnDgxBow23HBJSKAG4dtRrcdImLUsHjHgQSbfsTfh+Jzv14PLkT8FYioBX/EBXKF1LQQ7rdq7AowC0s8XnaA+iiMRziyRFvdb7cnn3iekN3Z0DVkzRyQ4d4WdaHY+O2eq/lDeI+o7o1LtqK0hK0HhcmDZIqDzmXV9HAgZN5g4uyRiXEftN7IonYB2J37PXB+yzQIDAQAB" ;
+}

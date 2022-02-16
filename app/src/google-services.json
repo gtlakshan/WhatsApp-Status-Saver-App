@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "356909317380",
+    "project_id": "whatsapp-status-8ecd3",
+    "storage_bucket": "whatsapp-status-8ecd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356909317380:android:0fb2ba539195b0865ca451",
+        "android_client_info": {
+          "package_name": "com.infinitystock.statussaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356909317380-vq045oaii8pq4fsildg66n46dlgt88j3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABzS9A8e3UWJVQIeXxE6x7MHRQirq7RDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356909317380-vq045oaii8pq4fsildg66n46dlgt88j3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

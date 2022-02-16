@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/banner_container">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/RLTopLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/colorPrimary"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerInParent="true"
+                            android:text="Settings"
+                            android:fontFamily="@font/worksans"
+                            android:textColor="@color/white"
+                            android:textSize="20dp">
+
+                        </TextView>
+
+                        <ImageView
+
+                            android:id="@+id/imBack"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="0dp"
+                            android:padding="5dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_back"
+                            ads:tint="@color/white" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/liner_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RLTopLayout"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="3dp"
+                    android:layout_marginTop="35dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border_shape"
+                    android:paddingBottom="10dp">
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/bugReport"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:elevation="3dp">
+
+                        <ImageView
+                            android:id="@+id/Email"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/circle"
+                            android:padding="12dp"
+                            android:src="@drawable/email" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:layout_toLeftOf="@+id/Arrow4"
+                            android:layout_toRightOf="@+id/Email"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="3dp"
+                                android:fontFamily="@font/worksans"
+                                android:text="Report bug"
+
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/about_above_txt_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="3dp"
+
+                                android:text="An unexpected error occurred.if it keeps crashing Clear app data or send an email"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/about_below_txt_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/Arrow4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_arrow" />
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:id="@+id/privacy"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+
+                        android:elevation="3dp">
+
+                        <ImageView
+                            android:id="@+id/WebsiteLogo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/circle"
+                            android:padding="12dp"
+                            android:src="@drawable/eye" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:layout_toLeftOf="@+id/imgArrow5"
+                            android:layout_toRightOf="@+id/WebsiteLogo"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="3dp"
+                                android:fontFamily="@font/worksans"
+                                android:text="Privacy Police"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/about_above_txt_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="3dp"
+
+                                android:text="Read our privacy police."
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/about_below_txt_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgArrow5"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_arrow" />
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:id="@+id/rvRateApp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:elevation="3dp">
+
+                        <ImageView
+                            android:id="@+id/rateLogo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/circle"
+                            android:padding="12dp"
+                            android:src="@drawable/star" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:layout_toLeftOf="@+id/rateArrow"
+                            android:layout_toRightOf="@+id/rateLogo"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/worksans"
+                                android:elevation="3dp"
+                                android:text="Rate App"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/about_above_txt_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="3dp"
+
+                                android:text="love this app?Let us know in the GooglePlay Store how we can make it even better."
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/about_below_txt_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/rateArrow"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_arrow" />
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:id="@+id/rvShareApp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:elevation="3dp">
+
+                        <ImageView
+                            android:id="@+id/shareLogo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/circle"
+                            android:padding="12dp"
+                            android:src="@drawable/share" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:layout_toLeftOf="@+id/shareArrow"
+                            android:layout_toRightOf="@+id/shareLogo"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="3dp"
+                                android:text="Share App"
+                                android:fontFamily="@font/worksans"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/about_above_txt_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="3dp"
+
+                                android:text="Share the app with your frinds"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/about_below_txt_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/shareArrow"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_arrow" />
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:id="@+id/rvAbout"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:elevation="3dp">
+
+                        <ImageView
+                            android:id="@+id/aboutLogo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/circle"
+                            android:padding="12dp"
+                            android:src="@drawable/information" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:layout_toLeftOf="@+id/aboutArrow"
+                            android:layout_toRightOf="@+id/aboutLogo"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/worksans"
+                                android:elevation="3dp"
+                                android:text="About Us"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/about_above_txt_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="3dp"
+
+                                android:text="about us"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/about_below_txt_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/aboutArrow"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_arrow" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="gone"
+                    android:id="@+id/RVUserList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_user_list" />
+                <ProgressBar
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pr_loading_bar"
+                    android:layout_marginTop="5dp"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    android:indeterminateTint="@color/colorPrimaryDark"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="gone"
+                    android:id="@+id/RVStories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/items_whatsapp_view" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/RVUserList"
+                    android:orientation="vertical"/>
+
+                <include
+                    android:visibility="gone"
+                    android:id="@+id/layoutHowTo"
+                    layout="@layout/layout_how_to" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- AD -->
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_banner_ad"/>
+
+
+    </RelativeLayout>
+</layout>
